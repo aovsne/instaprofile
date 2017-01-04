@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram</title>
+	<link rel="shortcut icon" href="img/instagram.png">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Ubuntu+Condensed" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div style="text-align: center">
+			<h1 class="head"><img src="img/instagram.png" style="height:60px; width:60px"> Instagram</h1>
+		</div>
+		<div id="firstpart" class="col-sm-6 col-sm-offset-3" style="text-align: center">	
+			<div>
+				<h2 class="sign">Sign Up</h2>
+				<form>
+					<input type="text" id="firstName" placeholder="FirstName"><br>
+					<input type="text" id="lastName" placeholder="LastName">
+				</form>
+			</div>
+			<div class="sex">
+				<h3>Gender:</h3>
+				<label>
+					<input type="radio" name="radio1" class="Gender" value="male"> Male
+				</label>
+				<label>
+					<input type="radio" name="radio1" class="Gender" value="female"> Female
+				</label>
+			</div>
+			<div>
+				<form>
+					<input type="text" id="email" placeholder="E-Mail">
+					<input type="text" id="phone" placeholder="Phone Number">
+				</form>
+			</div>
+			<div>
+				<select>
+					<option value="" class="color">Select your favorite color.</option>
+					<option value="blue" class="color">Blue</option>
+					<option value="red" class="color">Red</option>
+					<option value="violet" class="color">Violet</option>
+					<option value="black" class="color">Black</option>
+				</select>
+			</div>
+			<div>
+				<h3 class="continent">Continent of Birth:</h3>
+				<label>
+					<input type="radio" name="radio2" class="birth" value="Africa"> Africa
+				</label>
+				<label>
+					<input type="radio" name="radio2" class="birth" value="Asia"> Asia
+				</label>
+				<label>
+					<input type="radio" name="radio2" class="birth" value="Australia"> Australia
+				</label>
+				<label>
+					<input type="radio" name="radio2" class="birth" value="Europe"> Europe
+				</label>
+				<label>
+					<input type="radio" name="radio2" class="birth" value="NorthAmerica"> North America
+				</label>
+				<label>
+					<input type="radio" name="radio2" class="birth" value="SouthAmerica"> South America
+				</label>
+			</div>
+			<div>
+				<button class="btn btn-default" id="info" type="button">Continue</button>
+			</div>
+			<div id="result" style="font-size:25px; color:white; border-radius:5px; margin-top:10px;"></div>
+		</div>	
+		<div id="secondpart" class=" dudu col-sm-6 col-sm-offset-3" style="text-align: center">
+			<h2 style="background-color:#195c90; color:white; border-radius:5px">YOUR PROFILE INFO</h2>
+			<h3 id="newUsername"></h3>
+			<h3 id="newGender"></h3>
+			<h3 id="newEmail"></h3>
+			<h3 id="newPhone"></h3>
+			<h3 id="newColor"></h3>
+			<h3 id="newBirth"></h3>
+		</div>
+	</div>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ --><script src="js/main.js"></script>
+</body>
+</html>
